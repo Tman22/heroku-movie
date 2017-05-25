@@ -1,9 +1,10 @@
-import key from './key.js';
+// import key from './key.js';
 
 export default class ApiCalls {
 
   static getAllMovies() {
-    return fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${key}&language=en-US`)
+    return fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=72dd63e7f1a8c927ce73ad8949399f40
+&language=en-US`)
     .then(response => response.json())
     .then(movieObj => movieObj)
   }
