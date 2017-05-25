@@ -29672,7 +29672,7 @@
 
 /***/ }),
 /* 286 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
 	'use strict';
 	
@@ -29682,13 +29682,9 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _key = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./key.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	
-	var _key2 = _interopRequireDefault(_key);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	// import key from './key.js';
 	
 	var ApiCalls = function () {
 	  function ApiCalls() {
@@ -29698,7 +29694,7 @@
 	  _createClass(ApiCalls, null, [{
 	    key: 'getAllMovies',
 	    value: function getAllMovies() {
-	      return fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=' + _key2.default + '&language=en-US').then(function (response) {
+	      return fetch('https://api.themoviedb.org/3/movie/now_playing?api_key=72dd63e7f1a8c927ce73ad8949399f40\n&language=en-US').then(function (response) {
 	        return response.json();
 	      }).then(function (movieObj) {
 	        return movieObj;
